@@ -1,6 +1,11 @@
 # Compiled class file
 *.class
 
+/target/**
+
+*.iml
+
+/.idea
 # Log file
 *.log
 
@@ -15,7 +20,7 @@
 *.war
 *.nar
 *.ear
-*.zip
+#*.zip
 *.tar.gz
 *.rar
 
