@@ -45,11 +45,11 @@ public class PdfTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        File pdfFile = new File("demo.pdf");
-        File encryptPdfFile = new File("demo_encrypt.pdf");
-        File zipFile = new File("demo.zip");
+        File pdfFile = new File("output/demo.pdf");
+        File encryptPdfFile = new File("output/demo_encrypt.pdf");
+        File zipFile = new File("output/demo.zip");
 
-        try (OutputStream os = new FileOutputStream("demo.pdf")) {
+        try (OutputStream os = new FileOutputStream(pdfFile)) {
             renderer.createPDF(os);
 
             // encrypt pdf, if needn't encrypt pdf file, can remove pdfBox dependency
